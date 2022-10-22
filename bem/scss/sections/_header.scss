@@ -1,0 +1,38 @@
+.header {
+	position: relative;
+	margin-top: 44px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	// @extend %flex-c-sbt;
+
+	.nav {
+		&__list {
+			display: flex;
+			gap: 32px;
+			list-style: none;
+		}
+
+		&__link {
+			font-family: $main-font-bold;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 12px;
+			line-height: 15px;
+
+			letter-spacing: 0.923077px;
+			text-transform: uppercase;
+
+			color: #83888f;
+			text-decoration: none;
+
+			transition: color 0.2s ease;
+
+			&:hover {
+				color: red;
+			}
+		}
+	}
+}

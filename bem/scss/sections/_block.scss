@@ -1,0 +1,46 @@
+.block {
+	margin: 100px 0;
+	display: flex;
+	gap: 23px;
+
+	.card {
+		width: 228px;
+		min-height: 250px;
+
+		padding: 28px 32px;
+
+		background: #f4f1eb;
+		border-radius: 8px;
+
+		transition: background 0.2s ease;
+		cursor: pointer;
+
+		&:hover {
+			background: #fdd6ba;
+		}
+
+		&__title {
+			margin-bottom: 24px;
+
+			font-family: 'Fraunces 9pt';
+
+			font-size: 24px;
+			line-height: 32px;
+
+			color: #333d4b;
+		}
+		&__description {
+			color: #333d4b;
+		}
+
+		&--main {
+			background: $main-bg-color;
+		}
+		&--main &__title {
+			color: #ffffff;
+		}
+		&--main &__description {
+			color: #fefcf7;
+		}
+	}
+}

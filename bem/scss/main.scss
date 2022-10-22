@@ -1,0 +1,32 @@
+@import './variables';
+@import './fonts';
+@import './global';
+@import './sections/header';
+@import './sections/hero';
+@import './sections/block';
+@import './sections/collection';
+
+@mixin arrow($top: 100%, $left: 10%) {
+	position: absolute;
+	top: $top;
+	left: $left;
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 15px solid black;
+}
+
+.arrow-up {
+	@include arrow(10%, 50%);
+}
+.arrow-bottom {
+	@include arrow(80%, 60%);
+}
+
+.arrow-left {
+	@include arrow();
+}
+.arrow-right {
+	@include arrow(20%, 100%);
+}
